@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="204.0" prefWidth="260.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.cyandark.app.Controller">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Label text="欢迎使用" />
+  <Label fx:id="welcomeText" text="请选择需要导出的矢量类型" />
+    <Label styleClass="text" fx:id="tips" text="请稍候......" visible="false" />
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onPointBtnSelect"
+                text="点"/>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onFileBtnSelect"
+                text="线">
+           <HBox.margin>
+               <Insets left="20.0"/>
+           </HBox.margin>
+        </Button>
+    </HBox>
+    <Button fx:id="excelChooser" visible="false" />
+    <Button fx:id="outputChooser" visible="false" />
+</VBox>
