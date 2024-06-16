@@ -76,6 +76,9 @@ public class Controller {
             if (cells.getRowNum() < 6) {
                 continue;
             }
+            if (cells.getCell(3) == null){
+                continue;
+            }
             // 处理图形信息
             GeometryJSON geometryJson = new GeometryJSON();
             Geometry read;
