@@ -2,7 +2,6 @@ module cn.cyandark.app {
     requires javafx.controls;
     requires javafx.fxml;
     requires org.geotools.main;
-    requires org.geotools.api;
     requires org.geotools.geojson;
     requires org.geotools.shapefile;
     requires org.apache.commons.collections4;
